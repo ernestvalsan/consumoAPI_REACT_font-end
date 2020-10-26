@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+import axios from 'axios';
+
+//axios.default.baseURL = 'http://b22e5b8b1d17.ngrok.io/api/';  //IMPORTARLA CUANDO LA API SEA FIJA
+//axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('token');  //Haciendo los headers fijos
 
 ReactDOM.render(
   <React.StrictMode>

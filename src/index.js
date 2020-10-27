@@ -4,16 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import axios from 'axios';
 
-//axios.default.baseURL = 'http://b22e5b8b1d17.ngrok.io/api/';  //IMPORTARLA CUANDO LA API SEA FIJA
-//axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('token');  //Haciendo los headers fijos
+//axios.default.baseURL = 'http://2476a3fe3582.ngrok.io/api/';  // Default URL para la API
+
+// Hacer por default el header de autorización del token.
+//axios.defaults.headers.common['Authorization'] = 'Bearer ' + JSON.parse(localStorage.getItem('token')).access_token
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
